@@ -150,6 +150,10 @@ echo 'alias tf="terraform"' >> ~/.zshrc
 ```sh
 source ~/.zshrc
 ```
+### Verify the alias
+```sh
+tf --version # should show you the terraform version
+```
 
 Now, you can run Terraform commands faster, e.g., `tf plan` instead of `terraform plan`.
 
