@@ -38,6 +38,8 @@ Ensure you have the following installed on your Mac:
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+## ATENTION
+# At the end of installing brew, you will see commands to ADD Homebrew TO PATH: RUN THEM!
 brew --version
 ```
 
@@ -51,15 +53,8 @@ sudo installer -pkg AWSCLIV2.pkg -target /
 Verify installation path and version:
 
 ```sh
-$ which aws
-# example of output
-/usr/local/bin/aws
-```
-
-```sh
-$ aws --version
-# example of output
-aws-cli/2.19.1 Python/3.11.6 Darwin/23.3.0 botocore/2.4.5
+which aws
+aws --version
 ```
 
 More information to use the AWS CLI: [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-environment](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-environment)
@@ -78,8 +73,9 @@ terraform -version
 ```
 
 ## Step 4: Install tfenv (Terraform Version Manager)
-
+This Tools helps you manage multiple versions of Terraform locally. 
 ```sh
+brew unlink terraform 
 brew install tfenv
 ```
 
@@ -107,12 +103,6 @@ Use a specific Terraform version:
 
 ```sh
 tfenv use 1.10.5  # Replace with installed version
-```
-
-Set a default Terraform version globally:
-
-```sh
-tfenv use 1.10.5 --global
 ```
 
 Verify the current Terraform version:
