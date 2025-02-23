@@ -100,19 +100,19 @@ tfenv list-remote
 Install a specific Terraform version:
 
 ```sh
-tfenv install 1.5.0  # Replace with desired version
+tfenv install 1.10.5  # Replace with desired version
 ```
 
 Use a specific Terraform version:
 
 ```sh
-tfenv use 1.5.0  # Replace with installed version
+tfenv use 1.10.5  # Replace with installed version
 ```
 
 Set a default Terraform version globally:
 
 ```sh
-tfenv use 1.5.0 --global
+tfenv use 1.10.5 --global
 ```
 
 Verify the current Terraform version:
