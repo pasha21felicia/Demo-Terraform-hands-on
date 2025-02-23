@@ -38,6 +38,7 @@ Ensure you have the following installed on your Mac:
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew --version
 ```
 
 ## Step 2: Install AWS CLI (Skip if already configured)
